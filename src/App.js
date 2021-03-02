@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import fakeData from './fakeData/Player.json'
 import Player from './components/Player';
@@ -28,7 +29,7 @@ function App() {
        
      </div>
      <div className="player-container">
-       <h1>Bangladesh Team</h1>
+      <h1>Bangladesh Team</h1>
      <h1>Team Member:{player.length}</h1>
       {
         player.map(player => <Player player={player} handleAddPlayer={handleAddPlayer}></Player>)
